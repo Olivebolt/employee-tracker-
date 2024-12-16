@@ -1,0 +1,75 @@
+# Employee Tracker
+
+![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+
+Use this application to track employees, roles, and departments!
+
+## Table of Contents
+- [Description](#description)
+- [License](#license)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Questions](#questions)
+
+## Description
+This project leverages **Node.js** and **PostgreSQL** to store and manipulate information about employees. It keeps track of details such as salaries, positions, department roles, and hierarchical structures (e.g., who reports to whom). The application is designed to make employee data management efficient and straightforward.
+
+## License
+This project is licensed under the MIT License. To view the full license text, [click here](https://opensource.org/licenses/MIT).
+
+## Installation
+Follow these steps to set up the application:
+
+1. **Download the Project**:
+   - Click the **Code** button in this repository and download the ZIP file.
+   - Extract the ZIP file and open the extracted folder in your terminal.
+
+2. **Set Up the Database**:
+   - Ensure you have **PostgreSQL** installed on your system.
+   - In your terminal, start PostgreSQL by running:
+     ```bash
+     psql -U postgres
+     ```
+   - Load the database schema and seed data:
+     ```bash
+     \i db/schema.sql
+     \i db/seeds.sql
+     ```
+   - Exit PostgreSQL:
+     ```bash
+     \q
+     ```
+
+3. **Install Dependencies**:
+   - Install the required Node.js packages by running:
+     ```bash
+     npm install
+     ```
+
+4. **Set Up Environment Variables**:
+   - Rename the `.env.example` file to `.env` in the root directory.
+   - Open `.env` and update the following fields:
+     ```env
+     DB_USER=postgres
+     DB_PASSWORD=your_postgres_password
+     ```
+
+## Usage
+1. Start the application by running:
+   ```bash
+   npm run start
+   ```
+
+2. Use the interactive menu to navigate and manage employee data, including:
+   - Viewing employees, roles, and departments.
+   - Adding, editing, and deleting records.
+
+### Important Notes:
+- For the best experience, maximize or enlarge your terminal window to ensure tables display correctly.
+
+## Questions
+- Link to my GitHub: [GitHub Profile](https://github.com/Olivebolt)
+- Have questions? Feel free to reach out via email at: [obauvil@gmail.com](mailto:obauvil@gmail.com)
+
+---
+
